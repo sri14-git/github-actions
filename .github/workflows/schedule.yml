@@ -1,10 +1,9 @@
 on:
-    schedule:
-      - cron: '*/2 * * * *'
+  schedule:
+    - cron: "*/2 * * * *"
 jobs:
-    test_schedule:
-      runs-on: ubuntu-latest
-      steps:
-        - name: today date
-          run: echo "Date is $(date)"
-        
+  test_schedule:
+    runs-on: ubuntu-latest
+    steps:
+      - name: today date
+        run: echo "Date is $(date)"
